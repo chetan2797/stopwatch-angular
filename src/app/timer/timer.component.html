@@ -1,0 +1,29 @@
+<div style="text-align: center; margin-top: 25px;">
+    <span style="font-size: 32px;">
+        {{hour | timer}}:{{min | timer}}:{{sec | timer}}<sub>{{mini | minitimer}}</sub>
+    </span> <br><br>
+    <button mat-raised-button (click)="startTimer()" mat-fab [color]="color" style="margin-right: 10px; font-size: large;">{{start}}</button>
+    <button mat-raised-button (click)="resetTimer()" mat-fab color="warn" style="font-size: large;">Reset</button>
+    <form #timeForm="ngForm" (ngSubmit)="onSubmit()">
+        <div style="margin-top: 20px;">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Hours</mat-label>
+                <input type="number" matInput placeholder="00" name="hour" [(ngModel)]="show.hour">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Minute</mat-label>
+                <input type="number" matInput placeholder="00" value="0" name="min" [(ngModel)]="show.min">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Second</mat-label>
+                <input type="number" matInput placeholder="00" value="0" name="sec" [(ngModel)]="show.sec">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Mini</mat-label>
+                <input type="number" matInput placeholder="00" value="0" name="mini" [(ngModel)]="show.mini">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Update</button>
+        </div>
+    </form>
+</div>
+{{show | json}}

@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+	<span>Date & Time</span>
+</mat-toolbar>
+
+<div class="tab">
+	<a routerLink="" (click)="changeLink('timer')" class="tab-link first-link"><span [ngClass]="{'active-link' : flag=='timer'}">Timer</span></a>
+	<a routerLink="stopwatch" (click)="changeLink('stopwatch')" class="tab-link"><span [ngClass]="{'active-link' : flag=='stopwatch'}">Stopwatch</span></a>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+.tab{
+    padding-top: 12px;
+    margin: 0px 8px;
+    border-bottom: 2px solid #e2e2e2;
+}
+.tab-link{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 12px;
+}
+.active-link{
+    border-bottom: 2px solid #3f51b5;
+}
+.first-link{
+    padding-right: 12px;
+    border-right: 2px solid #e2e2e2;
+}
