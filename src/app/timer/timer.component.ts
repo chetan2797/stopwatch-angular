@@ -12,8 +12,6 @@ export class TimerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  date:Date = new Date();
-
   show:TimerInterface = {hour:0, min:2, sec:0, mini:0}
   hour:number = 0
   min:number = 2

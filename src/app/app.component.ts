@@ -9,6 +9,12 @@ export class AppComponent {
   title = 'stopwatch';
   flag:string = "timer"
 
+  constructor(){
+    if(location.pathname=='/stopwatch'){
+      this.flag = "stopwatch";
+    }
+  }
+
   changeLink(link:string):void{
     this.flag=link
   }

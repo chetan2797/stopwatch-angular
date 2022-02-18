@@ -1,0 +1,34 @@
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+}
+td{
+    padding: 0px 8px !important;
+}
+.text-center{
+    text-align: center;
+}
+.table{
+    overflow-y: auto;
+    margin: 25px 100px;
+    padding-bottom: 25px;
+}
+@media only screen and (max-width: 675px) {
+    .table{
+        margin-left: 50px;
+        margin-right: 50px;
+    }   
+}
+@media only screen and (max-width: 480px) {
+    .table{
+        margin-left: 25px;
+        margin-right: 25px;
+    }   
+}
+@media only screen and (max-width: 360px) {
+    .table{
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
+}
